@@ -8,11 +8,22 @@ import css from './about.module.scss';
 const About = () => {
   return (
     <div className={css.conteiner}>
-      <button className={css.custom_button}>
-        <span className={css.buttton_img}></span>
+      <img src={menu} alt="open_menu" className={css.icon_menu} />
+      <button
+        className={`${css.nav_button} ${css.nav_button_right} ${css.custom_button}`}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          data-name="Layer 1"
+          viewBox="0 0 24 24"
+          height="35px"
+          width="25px"
+        >
+          <path d="m6.733 23.888-.707-.707 10.827-10.827a.5.5 0 0 0 0-.708L6.026.819l.707-.707L17.56 10.939c.283.283.439.66.439 1.061s-.156.777-.439 1.061L6.733 23.888Z" />
+        </svg>
         <span className={css.button_text}>portfolio</span>
       </button>
-      <img src={menu} alt="open_menu" className={css.icon_menu} />
+
       <h1 className={css.tittle}>Hello, my name is Viacheslav Rashnyk</h1>
       <p className={css.text}>I am Full Stack Developer</p>
       <button className={css.button}>

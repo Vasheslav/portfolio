@@ -1,0 +1,61 @@
+.conteiner {
+  margin: auto;
+  height: 100vh;
+  padding: 10px;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.icon_menu {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  width: 30px;
+  height: 30px;
+}
+
+.nav_button {
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav_button_left {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.nav_button svg {
+  transition: transform 0.3s ease;
+}
+
+.nav_button:hover svg {
+  transform: scale(1.3);
+}
+
+.button_text {
+  position: absolute;
+  right: 100%;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.custom_button_left:hover .button_text {
+  right: calc(-100% + 10px);
+  visibility: visible;
+  opacity: 1;
+}
