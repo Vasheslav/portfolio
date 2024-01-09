@@ -1,0 +1,219 @@
+@import '../../index.scss';
+
+.conteiner {
+  margin: auto;
+  height: 100vh;
+  padding: 10px;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: center;
+
+  // background-image: url(../../components/img/img.mob.jpg);
+
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-position: right;
+}
+
+// .image_container {
+//   width: 100%;
+//   height: auto;
+//   background-image: url(../../components/img/img.mob.jpg);
+
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   background-position: right;
+//   opacity: 0.5;
+// }
+
+// .text_box {
+
+// }
+
+.icon_menu {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  width: 30px;
+  height: 30px;
+}
+
+.tittle {
+  margin-bottom: 14px;
+
+  font-feature-settings: 'liga' off;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: var(--font);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 114.28%;
+  letter-spacing: -0.56px;
+}
+
+.text {
+  margin-bottom: 30px;
+  font-family: var(--font);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 128.5%;
+  letter-spacing: -0.28px;
+}
+
+.button {
+  position: relative;
+  margin: 0 auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+}
+
+.button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.button span {
+  position: relative;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--main-text-color);
+}
+
+.button svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.button:hover:before {
+  width: 100%;
+  background: #b1dae7;
+}
+
+.button:hover svg {
+  transform: translateX(0);
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.wrapper {
+  position: absolute;
+  bottom: 15px;
+
+  display: inline-flex;
+  gap: 20px;
+  list-style: none;
+  width: 100%;
+  padding-top: 40px;
+  font-family: 'Poppins', sans-serif;
+  justify-content: center;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 12px;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: '';
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: #1da1f2;
+  color: #fff;
+}
+
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+  background: #1877f2;
+  color: #fff;
+}
+
+.wrapper .telegram:hover,
+.wrapper .telegram:hover .tooltip,
+.wrapper .telegram:hover .tooltip::before {
+  background: #1877f2;
+  color: #fff;
+}
+
+.icon_contact {
+  width: 40px;
+  height: 40px;
+
+  &:hover,
+  &:focus {
+    scale: 1.2;
+  }
+}
