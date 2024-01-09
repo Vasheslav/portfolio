@@ -8,19 +8,20 @@ import css from './about.module.scss';
 const About = () => {
   return (
     <div className={css.conteiner}>
-      <div className={css.image_container}></div>
-      <div className={css.text_box}>
-        <img src={menu} alt="open_menu" className={css.icon_menu} />
-        <h1 className={css.tittle}>Hello, my name is Viacheslav Rashnyk</h1>
-        <p className={css.text}>I am Full Stack Developer</p>
-        <button className={css.button}>
-          <span>About Me</span>
-          <svg viewBox="0 0 13 10" height="10px" width="15px">
-            <path d="M1,5 L11,5"></path>
-            <polyline points="8 1 12 5 8 9"></polyline>
-          </svg>
-        </button>
-      </div>
+      <button className={css.custom_button}>
+        <span className={css.buttton_img}></span>
+        <span className={css.button_text}>portfolio</span>
+      </button>
+      <img src={menu} alt="open_menu" className={css.icon_menu} />
+      <h1 className={css.tittle}>Hello, my name is Viacheslav Rashnyk</h1>
+      <p className={css.text}>I am Full Stack Developer</p>
+      <button className={css.button}>
+        <span>About Me</span>
+        <svg viewBox="0 0 13 10" height="10px" width="15px">
+          <path d="M1,5 L11,5"></path>
+          <polyline points="8 1 12 5 8 9"></polyline>
+        </svg>
+      </button>
 
       <ul className={css.wrapper}>
         <li className={`${css.icon} ${css.github}`}>
