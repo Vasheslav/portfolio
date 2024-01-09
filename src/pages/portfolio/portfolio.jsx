@@ -1,12 +1,12 @@
 import React from 'react';
 import ProjectsData from '../../components/projectsData';
-import menu from '../../img/menu.png';
+// import menu from '../../img/menu.png';
 import css from './portfolio.module.scss';
 
 const Portfolio = () => {
   return (
     <div className={css.conteiner}>
-      <img src={menu} alt="open_menu" className={css.icon_menu} />
+      {/* <img src={menu} alt="open_menu" className={css.icon_menu} /> */}
       <button
         className={`${css.nav_button} ${css.nav_button_right} ${css.custom_button_right}`}
       >
