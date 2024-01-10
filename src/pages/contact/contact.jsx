@@ -1,13 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 // import ProjectsData from '../../components/projectsData';
-// import menu from '../../img/menu.png';
 import css from './contact.module.scss';
 
 const Contact = () => {
   return (
     <div className={css.conteiner}>
-      {/* <img src={menu} alt="open_menu" className={css.icon_menu} /> */}
-      <button
+      <Link
+        to="/portfolio"
         className={`${css.nav_button} ${css.nav_button_left} ${css.custom_button_left}`}
       >
         <svg
@@ -22,7 +22,7 @@ const Contact = () => {
         <span className={`${css.button_text} ${css.button_text_left}`}>
           about
         </span>
-      </button>
+      </Link>
     </div>
   );
 };

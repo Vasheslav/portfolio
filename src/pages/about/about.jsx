@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 // import menu from '../../img/menu.png';
 import telegram from '../../img/telegram.png';
 import github from '../../img/github.png';
@@ -9,7 +10,8 @@ const About = () => {
   return (
     <div className={css.conteiner}>
       {/* <img src={menu} alt="open_menu" className={css.icon_menu} /> */}
-      <button
+      <Link
+        to="portfolio"
         className={`${css.nav_button} ${css.nav_button_right} ${css.custom_button}`}
       >
         <svg
@@ -22,7 +24,7 @@ const About = () => {
           <path d="m6.733 23.888-.707-.707 10.827-10.827a.5.5 0 0 0 0-.708L6.026.819l.707-.707L17.56 10.939c.283.283.439.66.439 1.061s-.156.777-.439 1.061L6.733 23.888Z" />
         </svg>
         <span className={css.button_text}>portfolio</span>
-      </button>
+      </Link>
 
       <h1 className={css.tittle}>Hello, my name is Viacheslav Rashnyk</h1>
       <p className={css.text}>I am Full Stack Developer</p>
