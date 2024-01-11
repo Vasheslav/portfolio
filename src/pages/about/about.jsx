@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
+import ButtonMobileMenu from '../../components/buttonMobileMenu/buttonMobileMenu';
 import telegram from '../../img/telegram.png';
 import github from '../../img/github.png';
 import linkedin from '../../img/linkedin.png';
@@ -8,8 +10,10 @@ import css from './about.module.scss';
 const About = () => {
   return (
     <div className={css.conteiner}>
+      <ButtonMobileMenu />
+
       <Link
-        to="portfolio"
+        to="/projects"
         className={`${css.nav_button} ${css.nav_button_right} ${css.custom_button}`}
       >
         <svg

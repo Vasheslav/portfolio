@@ -1,13 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import ProjectsData from '../../components/projectsData';
+
+import ButtonMobileMenu from '../../components/buttonMobileMenu/buttonMobileMenu';
 import css from './contact.module.scss';
 
 const Contact = () => {
   return (
     <div className={css.conteiner}>
+      <ButtonMobileMenu />
+
       <Link
-        to="/portfolio"
+        to="/projects"
         className={`${css.nav_button} ${css.nav_button_left} ${css.custom_button_left}`}
       >
         <svg
