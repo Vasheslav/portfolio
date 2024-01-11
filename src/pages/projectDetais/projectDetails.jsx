@@ -13,11 +13,25 @@ const ProjectDetails = () => {
     <div className={css.conteiner}>
       <div className={css.projectCard}>
         <h1>{project.title}</h1>
+
         <img
           src={project.img}
           alt={project.title}
           className={css.projectImage}
         />
+        <h2>About this project</h2>
+        <p>{project.description}</p>
+        <h2>Technical Sheet</h2>
+        <p>
+          Code technologies I got involved with while working on this project.
+        </p>
+        <ul>
+          {project.technologies.map(technologi => (
+            <li className={css.projectItem}>
+              <p>{technologi}</p>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );

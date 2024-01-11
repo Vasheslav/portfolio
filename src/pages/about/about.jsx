@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import menu from '../../img/menu.png';
 import telegram from '../../img/telegram.png';
 import github from '../../img/github.png';
 import linkedin from '../../img/linkedin.png';
@@ -9,7 +8,6 @@ import css from './about.module.scss';
 const About = () => {
   return (
     <div className={css.conteiner}>
-      {/* <img src={menu} alt="open_menu" className={css.icon_menu} /> */}
       <Link
         to="portfolio"
         className={`${css.nav_button} ${css.nav_button_right} ${css.custom_button}`}
