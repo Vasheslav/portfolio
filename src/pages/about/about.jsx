@@ -9,7 +9,7 @@ import css from './about.module.scss';
 
 const About = () => {
   return (
-    <div className={css.conteiner}>
+    <div className={css.container}>
       <ButtonMobileMenu />
 
       <Link
@@ -29,7 +29,10 @@ const About = () => {
       </Link>
 
       <h1 className={css.tittle}>Hello, my name is Viacheslav Rashnyk</h1>
-      <p className={css.text}>I am Full Stack Developer</p>
+      <p className={css.text}>
+        I am beginer Full Stack Developer. Feel free to take a look at my
+        projects on the web portfolio page.
+      </p>
       <button className={css.button}>
         <span>About Me</span>
         <svg viewBox="0 0 13 10" height="10px" width="15px">

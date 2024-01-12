@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import About from '../pages/about/about';
@@ -7,11 +7,11 @@ import ProjectDetails from '../pages/projectDetais/projectDetails';
 import Contact from 'pages/contact/contact';
 import NotFound from 'pages/notFound/notFound';
 
-// import css from './App.module.scss';
+import css from './App.module.scss';
 
 export const App = () => {
   return (
-    <div>
+    <div className={css.section}>
       <Routes>
         <Route path="/" element={<About />} />
         <Route path="/projects" element={<Projects />} />
