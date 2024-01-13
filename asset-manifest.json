@@ -1,16 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.cdca4e60.css",
-    "main.js": "/static/js/main.db4c44de.js",
+    "main.css": "/static/css/main.bbe8379d.css",
+    "main.js": "/static/js/main.ba0bea9e.js",
+    "static/media/books1.jpg": "/static/media/books1.d2c6e5c2a1288bdc9624.jpg",
+    "static/media/iceCream1.jpg": "/static/media/iceCream1.f469818d9ce6f4a97316.jpg",
+    "static/media/web-studio.jpg": "/static/media/web-studio.25150faafd0d594ba710.jpg",
+    "static/media/drinkMaster2.jpg": "/static/media/drinkMaster2.b230080bcc87f4fce1a0.jpg",
+    "static/media/drinkMaster1.jpg": "/static/media/drinkMaster1.8f2931bfbe809f156a9b.jpg",
+    "static/media/drinkMaster3.jpg": "/static/media/drinkMaster3.1cb0bb21da8cbcb2b849.jpg",
+    "static/media/web-studio1.jpg": "/static/media/web-studio1.28aa329c20d0486240a1.jpg",
+    "static/media/books2.jpg": "/static/media/books2.47e1df5310cc42e1dca5.jpg",
+    "static/media/drinkMaster4.jpg": "/static/media/drinkMaster4.2cfcab9ca4f818d97e4f.jpg",
+    "static/media/web-studio2.jpg": "/static/media/web-studio2.916412d6046d9c3f76d0.jpg",
     "static/media/github.png": "/static/media/github.dea49d48a3e47344edfe.png",
+    "static/media/web-studio5.jpg": "/static/media/web-studio5.2a033373645b3ca05576.jpg",
+    "static/media/web-studio4.jpg": "/static/media/web-studio4.71fab5efd1e246fcedf3.jpg",
     "static/media/telegram.png": "/static/media/telegram.16653560856d2f7d7495.png",
     "static/media/linkedin.png": "/static/media/linkedin.4506ebc862bab12b6eeb.png",
+    "static/media/books3.jpg": "/static/media/books3.856a03a1a2665c44c712.jpg",
+    "static/media/books4.jpg": "/static/media/books4.6d14da9c3fa2498164ac.jpg",
+    "static/media/iceCream2.jpg": "/static/media/iceCream2.73a4f2bec15c12f632c6.jpg",
     "index.html": "/index.html",
-    "main.cdca4e60.css.map": "/static/css/main.cdca4e60.css.map",
-    "main.db4c44de.js.map": "/static/js/main.db4c44de.js.map"
+    "main.bbe8379d.css.map": "/static/css/main.bbe8379d.css.map",
+    "main.ba0bea9e.js.map": "/static/js/main.ba0bea9e.js.map"
   },
   "entrypoints": [
-    "static/css/main.cdca4e60.css",
-    "static/js/main.db4c44de.js"
+    "static/css/main.bbe8379d.css",
+    "static/js/main.ba0bea9e.js"
   ]
 }
