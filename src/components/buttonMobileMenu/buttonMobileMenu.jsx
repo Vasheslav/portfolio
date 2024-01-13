@@ -12,8 +12,8 @@ const ButtonMobileMenu = () => {
   };
 
   return (
-    <div className={css.conteiner}>
-      <label className={css.container}>
+    <div className={css.box}>
+      <label>
         <input type="checkbox" onClick={toggleMenu} />
         <div className={css.checkmark}>
           <span></span>

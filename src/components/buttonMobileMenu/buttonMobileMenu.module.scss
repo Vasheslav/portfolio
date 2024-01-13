@@ -1,4 +1,4 @@
-.container input {
+.box input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -6,7 +6,7 @@
   width: 0;
 }
 
-.container {
+.box {
   display: block;
   position: relative;
   cursor: pointer;
@@ -17,15 +17,15 @@
 .checkmark {
   position: relative;
   top: 0;
-  left: 0;
+  right: 0px;
   height: 1.3em;
   width: 1.3em;
 }
 
 .checkmark span {
-  width: 32px;
+  width: 30px;
   height: 2px;
-  background-color: black;
+  background-color: var(--secondary-text-color);
   position: absolute;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -46,7 +46,7 @@
   top: 90%;
 }
 
-.container input:checked + .checkmark span:nth-child(1) {
+.box input:checked + .checkmark span:nth-child(1) {
   top: 50%;
   transform: translateY(-50%) rotate(45deg);
   -webkit-transform: translateY(-50%) rotate(45deg);
@@ -55,7 +55,7 @@
   -o-transform: translateY(-50%) rotate(45deg);
 }
 
-.container input:checked + .checkmark span:nth-child(2) {
+.box input:checked + .checkmark span:nth-child(2) {
   top: 50%;
   transform: translateY(-50%) rotate(-45deg);
   -webkit-transform: translateY(-50%) rotate(-45deg);
@@ -64,7 +64,7 @@
   -o-transform: translateY(-50%) rotate(-45deg);
 }
 
-.container input:checked + .checkmark span:nth-child(3) {
+.box input:checked + .checkmark span:nth-child(3) {
   transform: translateX(-50px);
   -webkit-transform: translateX(-50px);
   -moz-transform: translateX(-50px);

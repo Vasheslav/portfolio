@@ -8,7 +8,11 @@ const PortfolioList = ({ projects }) => {
     <ul className={css.wrapper}>
       {projects.map(project => (
         <li key={project.id} className={css.projectItem}>
-          <Link to={`${project.id}`} className={css.projectCard}>
+          <Link
+            to={`${project.id}`}
+            className={css.projectCard}
+            data-title={project.title}
+          >
             <img
               src={project.img}
               alt={project.title}

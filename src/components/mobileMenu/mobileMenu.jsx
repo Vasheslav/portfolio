@@ -8,13 +8,19 @@ const MobileMenu = () => {
     <div>
       <ul className={css.list}>
         <li className={css.link}>
-          <Link to="/">ABOUT</Link>
+          <Link to="/" className={css.text}>
+            about
+          </Link>
         </li>
         <li className={css.link}>
-          <Link to="/projects">PORTFOLIO</Link>
+          <Link to="/projects" className={css.text}>
+            portfolio
+          </Link>
         </li>
         <li className={css.link}>
-          <Link to="/contact">CONTACT</Link>
+          <Link to="/contact" className={css.text}>
+            contact
+          </Link>
         </li>
       </ul>
     </div>

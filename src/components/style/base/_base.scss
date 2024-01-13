@@ -2,6 +2,7 @@ body {
   font-family: var(--font);
   background-color: var(--primari-bg-color);
   color: var(--primary-text-color);
+  height: 100%;
   overflow-x: hidden;
 
   &.noScroll {
@@ -9,21 +10,21 @@ body {
   }
 }
 
-section {
-  padding: 15px;
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 0 15px 20px;
+
+  @media screen and (min-width: 375px) {
+    width: 375px;
+  }
 
   @media screen and (min-width: 768px) {
-    // padding-bottom: 140px;
+    width: 768px;
   }
 
-  @media screen and (min-width: 1200px) {
-    // padding-right: 100px;
-    // padding-left: 100px;
+  @media screen and (min-width: 1440px) {
+    width: 1440px;
   }
 }
-
-// .container {
-//   margin-left: auto;
-//   margin-right: auto;
-//   width: 100%;
-// }
