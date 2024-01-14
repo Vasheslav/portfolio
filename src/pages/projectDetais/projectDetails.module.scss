@@ -18,25 +18,14 @@
 }
 
 .title {
-  //   margin-bottom: 20px;
-
-  //   font-feature-settings: 'liga' off;
-  //   color: var(--secondary-text-color);
-  //   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-  //   font-size: 24px;
-  //   font-style: normal;
-  //   font-weight: 700;
-  //   line-height: 114.28%;
-  //   letter-spacing: -0.56px;
+  margin-bottom: 20px;
 
   font-size: 2.5em;
   line-height: 1em;
-  margin-bottom: 0.15em;
 
   color: var(--secondary-text-color);
   font-weight: 700;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
 
   text-transform: lowercase;
   width: 100%;
@@ -53,6 +42,8 @@
   outline-color: deeppink;
   transition: filter 250ms;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  margin-bottom: 15px;
 }
 
 .shadow {
@@ -133,19 +124,50 @@
 .title2 {
   position: relative;
 
+  // font-family: var(--secondary-font);
   font-size: 2em;
-  line-height: 1.35em;
+  line-height: 1.3em;
   font-weight: 600;
   color: var(--secondary-text-color);
 
   display: block;
   letter-spacing: -0.045em;
   padding: 0;
-  margin-bottom: 0.4em;
+  margin-bottom: 20px;
+
+  &::after {
+    content: '';
+    position: absolute;
+
+    display: block;
+    height: 1px;
+    width: 50%;
+    background-color: var(--secondary-bg-color);
+    border: 0;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .text {
-  margin-bottom: 1em;
+  margin-bottom: 20px;
+
+  font-family: var(--font);
   font-size: 1.3em;
-  line-height: 1.65em;
+  line-height: 1.2em;
 }
+
+.list {
+  list-style-type: circle;
+  list-style-position: outside;
+  padding-left: 20px;
+}
+
+.list_item {
+  margin-bottom: 5px;
+}
+
+// .list_item_last:last-child {
+//   margin-bottom: 20px;
+// }

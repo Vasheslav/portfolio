@@ -1,10 +1,30 @@
-.text {
-  display: block;
-  width: 100%;
-  text-align: center;
+// .text {
+//   display: block;
+//   width: 100%;
+//   text-align: center;
 
-  color: var(--primary-text-color);
-  font-size: 2em;
-  font-family: var(--font);
-  font-weight: 700;
+//   color: var(--primary-text-color);
+//   font-size: 2em;
+//   font-family: var(--font);
+//   font-weight: 700;
+// }
+
+.list {
+  height: 100vh; /* Висота вікна переглядача */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Вертикальне центрування */
+  align-items: center; /* Горизонтальне центрування */
+  width: 100vw; /* Ширина вікна переглядача */
+  overflow: hidden;
+}
+
+.link {
+  margin-bottom: 20px; /* Відступ між посиланнями */
+}
+
+.text {
+  text-decoration: none;
+  color: var(--primary-text-color); /* Встановіть ваш основний колір тексту */
+  font-size: 1.2rem; /* Розмір шрифту */
 }

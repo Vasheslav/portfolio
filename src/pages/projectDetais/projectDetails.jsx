@@ -15,9 +15,11 @@ const ProjectDetails = () => {
         <h1 className={css.title}>{project.title}</h1>
 
         <button className={css.pushable}>
-          <span className={css.shadow}></span>
-          <span className={css.edge}></span>
-          <span className={css.front}>VISIT THE WEBSITE</span>
+          <a href={project.link} target="_blank" rel="noopener noreferrer">
+            <span className={css.shadow}></span>
+            <span className={css.edge}></span>
+            <span className={css.front}>VISIT THE WEBSITE</span>
+          </a>
         </button>
 
         {project.anotherImg.map(img => (
@@ -26,10 +28,14 @@ const ProjectDetails = () => {
         <h2 className={css.title2}>About this project</h2>
         <p className={css.text}>{project.description}</p>
         <h2 className={css.title2}>Role</h2>
-        <ul>
+        <ul className={css.list}>
           {project.role.map(role => (
-            <li className={css.projectItem}>
-              <p className={css.text}>{role}</p>
+            <li>
+              <p
+                className={`${css.text} ${css.list_item} ${css.list_item_last}`}
+              >
+                {role}
+              </p>
             </li>
           ))}
         </ul>
@@ -37,10 +43,10 @@ const ProjectDetails = () => {
         <p className={css.text}>
           Code technologies I got involved with while working on this project.
         </p>
-        <ul>
+        <ul className={css.list}>
           {project.technologies.map(technologi => (
             <li className={css.projectItem}>
-              <p className={css.text}>{technologi}</p>
+              <p className={`${css.text} ${css.list_item}`}>{technologi}</p>
             </li>
           ))}
         </ul>

@@ -1,7 +1,11 @@
 @import-normalize;
+// @import '../../node_modules/modern-normalize/modern-normalize.css';
+// @import '../node_modules/modern-normalize/modern-normalize.css';
 
 @import './components/style/utils/variables';
 @import './components/style/utils/mixin';
 
 @import './components/style/base/base';
 @import './components/style/base/reset';
+
+// @import './pages/about/about.module.scss';

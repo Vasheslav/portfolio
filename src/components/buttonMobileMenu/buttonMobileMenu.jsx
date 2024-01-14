@@ -22,7 +22,8 @@ const ButtonMobileMenu = () => {
         </div>
       </label>
 
-      {isMenuOpen && <MobileMenu />}
+      {/* {isMenuOpen && <MobileMenu />} */}
+      {isMenuOpen && <MobileMenu onClose={toggleMenu} />}
     </div>
   );
 };
