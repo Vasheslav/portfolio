@@ -1,0 +1,12 @@
+@import '../../index.scss';
+
+.container {
+  height: 100vh;
+  @include displey-flex;
+}
+
+.flex_box {
+  background-color: var(--bg-color-white);
+
+  padding: 10px;
+}
