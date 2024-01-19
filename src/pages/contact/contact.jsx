@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import ButtonMobileMenu from '../../components/buttonMobileMenu/buttonMobileMenu';
+// import ButtonMobileMenu from '../../components/buttonMobileMenu/buttonMobileMenu';
 import css from './contact.module.scss';
 
 const Contact = () => {

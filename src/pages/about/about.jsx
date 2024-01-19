@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import ButtonMobileMenu from '../../components/buttonMobileMenu/buttonMobileMenu';
+// import ButtonMobileMenu from '../../components/buttonMobileMenu/buttonMobileMenu';
 import telegram from '../../img/telegram.png';
 import github from '../../img/github.png';
 import linkedin from '../../img/linkedin.png';
