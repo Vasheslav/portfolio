@@ -5,7 +5,7 @@ import css from './portfolioList.module.scss';
 
 const PortfolioList = ({ projects }) => {
   return (
-    <ul className={css.wrapper}>
+    <ul className={css.list}>
       {projects.map(project => (
         <li key={project.id} className={css.projectItem}>
           <Link

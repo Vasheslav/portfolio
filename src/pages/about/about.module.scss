@@ -1,11 +1,8 @@
 @import '../../index.scss';
 
 .container {
-  height: 100%;
+  height: 100vh;
 
-  // @include displey-flex;
-
-  // flex-direction: column;
   text-align: center;
 
   @media screen and (min-width: 768px) {
@@ -15,75 +12,128 @@
   }
 }
 
-.nav_button {
-  display: none;
-
-  // transform: translateY(-50%);
-  // background-color: transparent;
-  // border: none;
-  // cursor: pointer;
-  // padding: 10px;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-}
-
-.nav_button_right {
-  // position: absolute;
-  // top: 50%;
-  // right: 0;
-}
-
-.nav_button svg {
-  // transition: transform 0.3s ease;
-}
-
-.nav_button:hover svg {
-  // transform: scale(1.3);
-}
-
-.button_text {
-  // position: absolute;
-  // left: 100%;
-  // transition: all 0.3s ease;
-  // white-space: nowrap;
-  // visibility: hidden;
-  // opacity: 0;
-}
-
-.custom_button:hover .button_text {
-  // left: calc(100% - 80px);
-  // visibility: visible;
-  // opacity: 1;
-}
-
-.icon_menu {
-  // position: absolute;
-  // top: 15px;
-  // right: 15px;
-
-  // width: 30px;
-  // height: 30px;
-}
-
-.texBox {
-  @include displey-flex;
+.flex_box {
+  height: 100%;
+  display: flex;
   flex-direction: column;
 }
 
+.nav_button {
+  display: none;
+
+  @media screen and (min-width: 580px) {
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.nav_button_right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.nav_button svg {
+  transition: transform 0.3s ease;
+}
+
+.nav_button:hover svg {
+  transform: scale(1.3);
+}
+
+.button_text {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    left: 100%;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+
+    font-size: 1.2em;
+    line-height: 1em;
+    font-weight: 500;
+    letter-spacing: -1px;
+    color: var(--secondary-text-color);
+    font-family: var(--font);
+  }
+}
+
+.custom_button:hover .button_text {
+  left: calc(100% - 130px);
+  visibility: visible;
+  opacity: 1;
+}
+
+.textBox {
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 580px) {
+    width: 395px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 498px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1440px;
+  }
+}
+
 .tittle {
+  margin-bottom: 10px;
+
   font-size: 1.3em;
-  line-height: 1.7em;
+  line-height: 1.3em;
   font-weight: 700;
   letter-spacing: -1px;
   color: var(--secondary-text-color);
+  font-family: var(--font);
+
+  @media screen and (min-width: 580px) {
+    font-size: 1.5em;
+
+    margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 25px;
+
+    font-size: 1.8em;
+  }
 }
 
 .text {
+  margin-bottom: 10px;
+
   font-size: 1em;
-  line-height: 1.75em;
+  line-height: 1.3em;
   font-weight: 400;
   font-family: var(--font);
+
+  @media screen and (min-width: 580px) {
+    font-size: 1.2em;
+
+    margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 25px;
+
+    font-size: 1.5em;
+  }
 }
 
 .button {
@@ -146,13 +196,17 @@
 .wrapper {
   display: flex;
   gap: 20px;
-  // width: 100%;
+
   padding-top: 50px;
   font-family: 'Poppins', sans-serif;
   justify-content: center;
-  align-items: flex-end;
 
   margin-top: auto;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 30px;
+  }
 }
 
 .wrapper .icon {
@@ -167,6 +221,11 @@
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  @media screen and (min-width: 768px) {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .wrapper .tooltip {
@@ -230,6 +289,11 @@
 .icon_contact {
   width: 40px;
   height: 40px;
+
+  @media screen and (min-width: 768px) {
+    width: 60px;
+    height: 60px;
+  }
 
   &:hover,
   &:focus {

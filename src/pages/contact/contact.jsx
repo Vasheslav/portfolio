@@ -7,7 +7,7 @@ import css from './contact.module.scss';
 const Contact = () => {
   return (
     <div className={css.conteiner}>
-      <ButtonMobileMenu />
+      {/* <ButtonMobileMenu /> */}
 
       <Link
         to="/projects"
@@ -17,13 +17,14 @@ const Contact = () => {
           xmlns="http://www.w3.org/2000/svg"
           data-name="Layer 1"
           viewBox="0 0 24 24"
-          height="35px"
-          width="25px"
+          height="60px"
+          width="50px"
+          fill="white"
         >
           <path d="M17.267 23.888 6.439 13.061C6.156 12.778 6 12.401 6 12s.156-.777.439-1.061L17.267.112l.707.707L7.146 11.646a.5.5 0 0 0 0 .708l10.827 10.827-.707.707Z" />
         </svg>
         <span className={`${css.button_text} ${css.button_text_left}`}>
-          about
+          portfolio
         </span>
       </Link>
     </div>
