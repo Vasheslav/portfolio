@@ -2,12 +2,34 @@
 
 .container {
   padding-top: 30px;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media screen and (min-width: 830px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+
+  @media screen and (min-width: 1400px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .nav_button {
   display: none;
 
-  @media screen and (min-width: 580px) {
+  @media screen and (min-width: 768px) {
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
@@ -39,7 +61,7 @@
 .button_text {
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     display: block;
     position: absolute;
 
@@ -80,17 +102,6 @@
 .box {
   margin-right: auto;
   margin-left: auto;
-
-  @media screen and (min-width: 580px) {
-    width: 450px;
-  }
-
-  @media screen and (min-width: 1040px) {
-    margin-right: 0;
-    margin-left: 0;
-
-    width: 768px;
-  }
 }
 
 .tittle {
@@ -104,13 +115,11 @@
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: var(--font);
 
-  @media screen and (min-width: 580px) {
+  @media screen and (min-width: 768px) {
     font-size: 1.5em;
-
-    // margin-bottom: 15px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 25px;
 
     font-size: 1.8em;
@@ -127,13 +136,11 @@
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: var(--font);
 
-  @media screen and (min-width: 580px) {
+  @media screen and (min-width: 768px) {
     font-size: 1.5em;
-
-    // margin-bottom: 15px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 25px;
 
     font-size: 1.8em;

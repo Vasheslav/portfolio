@@ -18,6 +18,9 @@ const PortfolioList = ({ projects }) => {
               alt={project.title}
               className={css.projectImage}
             />
+            <div className={css.overlay}>
+              <button className={css.moreButton}>more...</button>
+            </div>
           </Link>
         </li>
       ))}
