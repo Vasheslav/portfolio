@@ -5,7 +5,7 @@ import About from '../pages/about/about';
 import Projects from '../pages/projects/projects';
 import ProjectDetails from '../pages/projectDetais/projectDetails';
 import Contact from 'pages/contact/contact';
-import NotFound from 'pages/notFound/notFound';
+// import NotFound from 'pages/notFound/notFound';
 // import ButtonMobileMenu from './buttonMobileMenu/buttonMobileMenu';
 
 import css from './App.module.scss';
@@ -21,7 +21,7 @@ export const App = () => {
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/:projectId" element={<ProjectDetails />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<NotFound />} />
+        {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
     </div>
   );
