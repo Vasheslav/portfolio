@@ -54,19 +54,31 @@ const About = () => {
         <ul className={css.wrapper}>
           <li className={`${css.icon} ${css.github}`}>
             <span className={css.tooltip}>Github</span>
-            <a href="https://github.com/Vasheslav">
+            <a
+              href="https://github.com/Vasheslav"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={github} alt="github" className={css.icon_contact} />
             </a>
           </li>
           <li className={`${css.icon} ${css.linkedin}`}>
             <span className={css.tooltip}>Linkedin</span>
-            <a href="https://www.linkedin.com/in/viacheslav-rashnyk-7b3825271/">
+            <a
+              href="https://www.linkedin.com/in/viacheslav-rashnyk-7b3825271/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={linkedin} alt="linkedin" className={css.icon_contact} />
             </a>
           </li>
           <li className={`${css.icon} ${css.telegram}`}>
             <span className={css.tooltip}>Telegram</span>
-            <a href="https://t.me/viasheslav_r">
+            <a
+              href="https://t.me/viasheslav_r"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={telegram} alt="telegram" className={css.icon_contact} />
             </a>
           </li>

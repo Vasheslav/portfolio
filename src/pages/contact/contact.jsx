@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import ContactForm from 'components/contactForm/contactForm';
 // import ButtonMobileMenu from '../../components/buttonMobileMenu/buttonMobileMenu';
 import css from './contact.module.scss';
 
 const Contact = () => {
   return (
-    <div className={css.conteiner}>
+    <div className={css.container}>
       {/* <ButtonMobileMenu /> */}
 
       <Link
@@ -27,6 +28,50 @@ const Contact = () => {
           portfolio
         </span>
       </Link>
+
+      <h1 className={css.title}>Get in touch</h1>
+      <p className={css.text}>
+        If you wanna get in touch, talk to me about a project collaboration or
+        just say hi, fill up the awesome form below or send an email:
+        <span>
+          <a href="mailto:vasheslav@meta.ua" className={css.mail}>
+            {' '}
+            vasheslav@meta.ua{' '}
+          </a>
+        </span>
+        to and ~let's talk.
+      </p>
+
+      <ContactForm />
+
+      <h2 className={css.dobleTitle}>Or</h2>
+      <p className={css.text}>Follow my profiles on GitHub and Linkedin.</p>
+
+      <div className={css.buttonBox}>
+        <button className={css.pushable}>
+          <a
+            href="https://github.com/Vasheslav"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className={css.shadow}></span>
+            <span className={css.edge}></span>
+            <span className={css.front}>GitHub</span>
+          </a>
+        </button>
+
+        <button className={css.pushable}>
+          <a
+            href="https://www.linkedin.com/in/viacheslav-rashnyk-7b3825271/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className={css.shadow}></span>
+            <span className={css.edge}></span>
+            <span className={css.front}>Linkedin</span>
+          </a>
+        </button>
+      </div>
     </div>
   );
 };
