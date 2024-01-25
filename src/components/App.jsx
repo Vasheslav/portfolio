@@ -6,16 +6,16 @@ import Projects from '../pages/projects/projects';
 import ProjectDetails from '../pages/projectDetais/projectDetails';
 import Contact from 'pages/contact/contact';
 import NotFound from 'pages/notFound/notFound';
-// import ButtonMobileMenu from './buttonMobileMenu/buttonMobileMenu';
+import ButtonMobileMenu from './buttonMobileMenu/buttonMobileMenu';
 
 import css from './App.module.scss';
 
 export const App = () => {
   return (
     <div className={css.section}>
-      {/* <nav className={css.header}>
+      <nav className={css.header}>
         <ButtonMobileMenu />
-      </nav> */}
+      </nav>
       <Routes className={css.content}>
         <Route path="/" element={<About />} />
         <Route path="/projects" element={<Projects />} />

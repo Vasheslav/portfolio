@@ -21,7 +21,6 @@ const ContactForm = () => {
       initialValues={{
         name: '',
         email: '',
-        password: '',
       }}
       validationSchema={schema}
       //   onSubmit={values => {
@@ -39,7 +38,7 @@ const ContactForm = () => {
       {formik => (
         <form onSubmit={formik.handleSubmit}>
           <div className={css.passwordContainer}>
-            <Field
+            <input
               id="name"
               name="name"
               type="text"
@@ -54,19 +53,14 @@ const ContactForm = () => {
                   : ''
               }`}
             />
-            {/* {formik.errors.name && formik.touched.name && (
-              <img src={errorImg} alt="Error" className={css.errorImage} />
-            )}
-            {formik.touched.name && !formik.errors.name && (
-              <img src={doneImg} alt="Done" className={css.doneImage} />
-            )} */}
             <ErrorMessage name="name" component="div" className={css.error} />
             {formik.touched.name && !formik.errors.name && (
               <div className={css.successMessage}>This is an CORRECT name</div>
             )}
           </div>
+
           <div className={css.passwordContainer}>
-            <Field
+            <input
               id="email"
               name="email"
               type="text"
@@ -81,56 +75,32 @@ const ContactForm = () => {
                   : ''
               }`}
             />
-            {/* {formik.errors.email && formik.touched.email && (
-              <img src={errorImg} alt="Error" className={css.errorImage} />
-            )}
-            {formik.touched.email && !formik.errors.email && (
-              <img src={doneImg} alt="Done" className={css.doneImage} />
-            )} */}
             <ErrorMessage name="email" component="div" className={css.error} />
             {formik.touched.email && !formik.errors.email && (
               <div className={css.successMessage}>This is an CORRECT email</div>
             )}
           </div>
+
           <div className={css.passwordContainer}>
-            {/* <Field
-              id="password"
-              name="password"
-              //   type={showPassword ? 'text' : 'password'}
-              onBlur={formik.handleBlur}
-              placeholder="Password"
+            <textarea
+              id="message"
+              name="message"
+              type="message"
+              placeholder="Your message"
               autoComplete="off"
-              className={`${css.input} ${css['last_input']} ${
-                formik.errors.password && formik.touched.password
+              className={`${css.input} ${
+                formik.errors.email && formik.touched.email
                   ? css.errorInput
-                  : formik.touched.password
+                  : formik.touched.email
                   ? css.сorrectInput
                   : ''
               }`}
-            /> */}
-            <div
-              //   onClick={() => setShowPassword(!showPassword)}
-              className={css.passwordToggle}
-            >
-              {/* <img
-                src={showPassword ? hidePasswordIcon : showPasswordIcon}
-                alt="Show Password"
-                className={css.passwordIcon}
-              /> */}
-            </div>
-            {/* <ErrorMessage
-              name="password"
-              component="div"
-              className={css.error}
             />
-            {formik.touched.password && !formik.errors.password && (
-              <div className={css.successMessage}>
-                This is an CORRECT password
-              </div>
-            )} */}
           </div>
-          <button type="submit" className={css.button}>
-            Send Message
+          <button className={css.pushable}>
+            <span className={css.shadow}></span>
+            <span className={css.edge}></span>
+            <span className={css.front}>Send Message</span>
           </button>
         </form>
       )}

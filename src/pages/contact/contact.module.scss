@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
+  // height: 100%;
 
   @media screen and (min-width: 768px) {
     width: 700px;
@@ -12,7 +12,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: 900px;
+    // width: 800px;
   }
 }
 
@@ -70,6 +70,13 @@
   right: calc(-100% + 10px);
   visibility: visible;
   opacity: 1;
+}
+
+.flexBox {
+  @media screen and (min-width: 1200px) {
+    @include displey-flex;
+    flex-direction: column;
+  }
 }
 
 .title {
@@ -147,8 +154,10 @@
     content: '';
     position: absolute;
 
-    // display: block;
-    height: 3px;
+    bottom: 0;
+    left: 0;
+
+    height: 2px;
     width: 100%;
     background-color: var(--primary-text-color);
     border: 0;
@@ -163,6 +172,7 @@
   gap: 10px;
 
   @media screen and (min-width: 768px) {
+    justify-content: flex-start;
     gap: 15px;
   }
 

@@ -12,18 +12,24 @@ const ButtonMobileMenu = () => {
   };
 
   return (
-    <div className={css.box}>
-      <label>
-        <input type="checkbox" onClick={toggleMenu} />
-        <div className={css.checkmark}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </label>
+    <div>
+      <div className={css.box}>
+        <label>
+          <input type="checkbox" />
+          <div
+            className={`${css.checkmark} ${isMenuOpen ? css.open : ''}`}
+            onClick={toggleMenu}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </label>
+      </div>
 
-      {/* {isMenuOpen && <MobileMenu />} */}
-      {isMenuOpen && <MobileMenu onClose={toggleMenu} />}
+      {isMenuOpen && (
+        <MobileMenu onClose={toggleMenu} isMenuOpen={isMenuOpen} />
+      )}
     </div>
   );
 };
