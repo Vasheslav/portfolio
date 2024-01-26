@@ -6,24 +6,13 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-color: var(--primari-bg-color);
-
-  // transform: translateX(-100%);
-  // @include transition(transform);
-  // transition: var(--transition);
 
   z-index: 999;
 
   overflow-y: scroll;
-  // @media screen and (min-width: 1200px) {
-  //   display: none;
-  // }
 }
-
-// .mobileMenu.is-open {
-//   transform: translateX(0);
-// }
 
 .mobile-menu__container {
   position: relative;
@@ -61,14 +50,14 @@
   @media screen and (min-width: 768px) {
     font-size: 1.8em;
 
-    margin-bottom: 15px;
+    // margin-bottom: 15px;
   }
 
-  // @media screen and (min-width: 1200px) {
-  //   margin-bottom: 25px;
+  @media screen and (min-width: 1200px) {
+    // margin-bottom: 25px;
 
-  //   font-size: 2em;
-  // }
+    font-size: 2em;
+  }
 }
 
 .box input {

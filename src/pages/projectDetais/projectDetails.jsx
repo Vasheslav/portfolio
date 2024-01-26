@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import ProjectsData from '../../components/projectsData';
+import Slider from 'components/slikImg/slikImg';
 
 import css from './projectDetails.module.scss';
 
@@ -22,34 +23,35 @@ const ProjectDetails = () => {
           </a>
         </button>
 
-        {project.anotherImg.map(img => (
-          <img src={img} alt={project.title} className={css.projectImage} />
-        ))}
-        <h2 className={css.title2}>About this project</h2>
-        <p className={css.text}>{project.description}</p>
-        <h2 className={css.title2}>Role</h2>
-        <ul className={css.list}>
-          {project.role.map(role => (
-            <li>
-              <p
-                className={`${css.text} ${css.list_item} ${css.list_item_last}`}
-              >
-                {role}
-              </p>
-            </li>
-          ))}
-        </ul>
-        <h2 className={css.title2}>Technical Sheet</h2>
-        <p className={css.text}>
-          Code technologies I got involved with while working on this project.
-        </p>
-        <ul className={css.list}>
-          {project.technologies.map(technologi => (
-            <li className={css.projectItem}>
-              <p className={`${css.text} ${css.list_item}`}>{technologi}</p>
-            </li>
-          ))}
-        </ul>
+        <Slider images={project.anotherImg} />
+
+        <div className={css.box}>
+          <h2 className={css.title2}>About this project</h2>
+          <p className={css.text}>{project.description}</p>
+          <h2 className={css.title2}>Role</h2>
+          <ul className={css.list}>
+            {project.role.map(role => (
+              <li>
+                <p
+                  className={`${css.text} ${css.list_item} ${css.list_item_last}`}
+                >
+                  {role}
+                </p>
+              </li>
+            ))}
+          </ul>
+          <h2 className={css.title2}>Technical Sheet</h2>
+          <p className={css.text}>
+            Code technologies I got involved with while working on this project.
+          </p>
+          <ul className={css.list}>
+            {project.technologies.map(technologi => (
+              <li className={css.projectItem}>
+                <p className={`${css.text} ${css.list_item}`}>{technologi}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );
