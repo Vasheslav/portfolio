@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1eb634b7.css",
-    "main.js": "/portfolio/static/js/main.e8eb2469.js",
+    "main.css": "/portfolio/static/css/main.b3c8cf9b.css",
+    "main.js": "/portfolio/static/js/main.c742a1de.js",
     "static/media/books1.jpg": "/portfolio/static/media/books1.d2c6e5c2a1288bdc9624.jpg",
     "static/media/iceCream1.jpg": "/portfolio/static/media/iceCream1.f469818d9ce6f4a97316.jpg",
     "static/media/web-studio.jpg": "/portfolio/static/media/web-studio.25150faafd0d594ba710.jpg",
@@ -21,11 +21,11 @@
     "static/media/books4.jpg": "/portfolio/static/media/books4.6d14da9c3fa2498164ac.jpg",
     "static/media/iceCream2.jpg": "/portfolio/static/media/iceCream2.73a4f2bec15c12f632c6.jpg",
     "index.html": "/portfolio/index.html",
-    "main.1eb634b7.css.map": "/portfolio/static/css/main.1eb634b7.css.map",
-    "main.e8eb2469.js.map": "/portfolio/static/js/main.e8eb2469.js.map"
+    "main.b3c8cf9b.css.map": "/portfolio/static/css/main.b3c8cf9b.css.map",
+    "main.c742a1de.js.map": "/portfolio/static/js/main.c742a1de.js.map"
   },
   "entrypoints": [
-    "static/css/main.1eb634b7.css",
-    "static/js/main.e8eb2469.js"
+    "static/css/main.b3c8cf9b.css",
+    "static/js/main.c742a1de.js"
   ]
 }
