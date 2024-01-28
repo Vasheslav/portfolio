@@ -21,54 +21,53 @@
   }
 }
 
-.nav_button {
-  transform: translateY(0);
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+.headerMenu_container {
+  display: none;
 
-.nav_button_left {
-  position: absolute;
-  top: 10px;
-  left: 10px;
   @media screen and (min-width: 768px) {
-    top: 15px;
-    left: 15px;
+    display: block;
   }
 }
 
-.nav_button svg {
-  transition: transform 0.3s ease;
+.list {
+  @include displey-flex;
+  gap: 20px;
 }
 
-.nav_button:hover svg {
-  transform: scale(1.2);
+.link {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-.button_text {
-  display: block;
-  position: absolute;
-  right: 100%;
-  transition: all 0.3s ease;
-  white-space: nowrap;
-  visibility: hidden;
-  opacity: 0;
+.text {
+  position: relative;
 
-  font-size: 1.2em;
-  line-height: 1em;
-  font-weight: 500;
-  letter-spacing: -1px;
+  font-size: 1.5em;
+  line-height: 1.3em;
+  font-weight: 400;
+  letter-spacing: 2px;
   color: var(--secondary-text-color);
   font-family: var(--font);
-}
 
-.custom_button_left:hover .button_text {
-  right: calc(-100% + (-50px));
-  visibility: visible;
-  opacity: 1;
+  &::after {
+    content: '';
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    height: 2px;
+    width: 0%;
+    background-color: var(--primary-text-color);
+    border: var(--br);
+    transition: width 0.3s ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 1.6em;
+  }
 }

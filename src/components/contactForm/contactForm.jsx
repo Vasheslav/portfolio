@@ -13,8 +13,8 @@ const schema = yup.object().shape({
 });
 
 const ContactForm = () => {
-  //   const dispatch = useDispatch();
-  //   const [showPassword, setShowPassword] = useState(false);
+  // const dispatch = useDispatch();
+  // const [showPassword, setShowPassword] = useState(false);
 
   return (
     <Formik
@@ -23,22 +23,22 @@ const ContactForm = () => {
         email: '',
       }}
       validationSchema={schema}
-      //   onSubmit={values => {
-      //     dispatch(register(values))
-      //       .unwrap()
-      //       .catch(error => {
-      //         if (error.message === 'Email in use') {
-      //           toast.error('Email in use');
-      //         } else {
-      //           toast.error('Some error happened :(');
-      //         }
-      //       });
-      //   }}
+      // onSubmit={values => {
+      //   dispatch(register(values))
+      //     .unwrap()
+      //     .catch(error => {
+      //       if (error.message === 'Email in use') {
+      //         toast.error('Email in use');
+      //       } else {
+      //         toast.error('Some error happened :(');
+      //       }
+      //     });
+      // }}
     >
       {formik => (
         <form onSubmit={formik.handleSubmit}>
-          <div className={css.passwordContainer}>
-            <input
+          <div className={css.formContainer}>
+            <Field
               id="name"
               name="name"
               type="text"
@@ -59,8 +59,8 @@ const ContactForm = () => {
             )}
           </div>
 
-          <div className={css.passwordContainer}>
-            <input
+          <div className={css.formContainer}>
+            <Field
               id="email"
               name="email"
               type="text"
@@ -81,20 +81,14 @@ const ContactForm = () => {
             )}
           </div>
 
-          <div className={css.passwordContainer}>
+          <div className={css.formContainer}>
             <textarea
               id="message"
               name="message"
               type="message"
               placeholder="Your message"
               autoComplete="off"
-              className={`${css.input} ${
-                formik.errors.email && formik.touched.email
-                  ? css.errorInput
-                  : formik.touched.email
-                  ? css.сorrectInput
-                  : ''
-              }`}
+              className={css.input}
             />
           </div>
           <button className={css.pushable}>
