@@ -31,13 +31,13 @@ const Contact = () => {
         <h1 className={css.title}>Get in touch</h1>
         <p className={css.text}>
           If you wanna get in touch, talk to me about a project collaboration or
-          just say hi, fill up the awesome form below or send an email:{' '}
+          just say hi, fill up the awesome form below or send an email to:{' '}
           <span>
             <a href="mailto:vasheslav@meta.ua" className={css.mail}>
               vasheslav@meta.ua
             </a>
           </span>{' '}
-          to and ~let's talk.
+          and ~let's talk.
         </p>
 
         <ContactForm />

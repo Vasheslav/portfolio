@@ -13,27 +13,38 @@ const schema = yup.object().shape({
 });
 
 const ContactForm = () => {
-  // const dispatch = useDispatch();
-  // const [showPassword, setShowPassword] = useState(false);
+  const handleSubmit = async (values, { setSubmitting }) => {
+    try {
+      // Замініть URL на ваш API ендпоінт для відправки електронного листа
+      const response = await fetch('YOUR_API_ENDPOINT', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      });
+
+      if (!response.ok) throw new Error('Something went wrong');
+
+      // Обробіть успішну відправку
+      console.log('Email sent successfully');
+    } catch (error) {
+      // Обробіть помилку відправки
+      console.error('Failed to send email', error);
+    } finally {
+      setSubmitting(false);
+    }
+  };
 
   return (
     <Formik
       initialValues={{
         name: '',
         email: '',
+        message: '',
       }}
       validationSchema={schema}
-      // onSubmit={values => {
-      //   dispatch(register(values))
-      //     .unwrap()
-      //     .catch(error => {
-      //       if (error.message === 'Email in use') {
-      //         toast.error('Email in use');
-      //       } else {
-      //         toast.error('Some error happened :(');
-      //       }
-      //     });
-      // }}
+      onSubmit={handleSubmit}
     >
       {formik => (
         <form onSubmit={formik.handleSubmit}>

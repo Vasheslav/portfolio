@@ -33,6 +33,7 @@ const ProjectDetails = () => {
             {project.role.map(role => (
               <li>
                 <p
+                  key={project.id}
                   className={`${css.text} ${css.list_item} ${css.list_item_last}`}
                 >
                   {role}
@@ -47,7 +48,9 @@ const ProjectDetails = () => {
           <ul className={css.list}>
             {project.technologies.map(technologi => (
               <li className={css.projectItem}>
-                <p className={`${css.text} ${css.list_item}`}>{technologi}</p>
+                <p key={project.id} className={`${css.text} ${css.list_item}`}>
+                  {technologi}
+                </p>
               </li>
             ))}
           </ul>
